@@ -1,0 +1,1831 @@
+
+
+Started GET "/" for ::1 at 2015-07-28 22:26:27 -0400
+
+ActiveRecord::NoDatabaseError (FATAL:  database "scribble_development" does not exist
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:665:in `rescue in connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-28 22:33:01 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 18ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-28 22:40:39 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-28 22:43:05 -0400
+
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-28 22:44:29 -0400
+
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-28 22:50:27 -0400
+
+ActionController::RoutingError (uninitialized constant WelcomController):
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:72:in `controller_reference'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:62:in `controller'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (32.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-28 22:52:51 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-07-28 22:53:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.1ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 22:53:12 -0400
+
+ActionController::RoutingError (uninitialized constant PostsController):
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:72:in `controller_reference'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:62:in `controller'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (93.3ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 22:59:09 -0400
+
+ActionController::RoutingError (uninitialized constant PostsController):
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:72:in `controller_reference'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:62:in `controller'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.9ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 22:59:17 -0400
+
+ActionController::RoutingError (uninitialized constant PostsController):
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:72:in `controller_reference'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:62:in `controller'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (53.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:00:16 -0400
+
+ActionController::RoutingError (uninitialized constant PostsController):
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.3) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:72:in `controller_reference'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:62:in `controller'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:41:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (6.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (122.8ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:01:32 -0400
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (124.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:01:48 -0400
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:5:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:09:46 -0400
+
+SyntaxError (/Users/adrianshepelavey/wdi/projects/scribble/scribble/app/controllers/posts_controller.rb:5: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/posts_controller.rb:5: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.9ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:10:18 -0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.erb within layouts/application (0.6ms)
+Completed 200 OK in 2146ms (Views: 2093.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-28 23:10:20 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-28 23:10:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-28 23:10:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-28 23:10:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-28 23:10:20 -0400
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:37:04 -0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.erb within layouts/application (0.2ms)
+Completed 200 OK in 85ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-28 23:37:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-28 23:37:04 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-28 23:37:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-28 23:37:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-28 23:37:05 -0400
+
+
+Started GET "/posts/new" for ::1 at 2015-07-28 23:37:30 -0400
+Processing by PostsController#new as HTML
+PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 24.3ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  app/controllers/posts_controller.rb:9:in `new'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (111.5ms)
+
+
+Started GET "/new" for ::1 at 2015-07-28 23:39:03 -0400
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-28 23:39:19 -0400
+Processing by PostsController#new as HTML
+PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.8ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  app/controllers/posts_controller.rb:9:in `new'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-28 23:40:29 -0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.erb within layouts/application (28.2ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-07-28 23:41:10 -0400
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (110.9ms)
+
+
+Started POST "/" for ::1 at 2015-07-28 23:44:38 -0400
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-28 23:44:47 -0400
+Processing by PostsController#new as HTML
+PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.7ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  app/controllers/posts_controller.rb:9:in `new'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.1ms)
+
+
+Started GET "/posts/" for ::1 at 2015-07-28 23:47:14 -0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-07-28 23:47:23 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsNpY1dFfKZYU5TjW7dNI4CSrtmoBwobvs606UzT1m1pdywrGpjkVR9Pxqdv6mJ5XFxhEaaT6Iwlhf4gbWmRlA==", "post"=>{"title"=>"first", "text"=>"blah"}, "commit"=>"Save Post"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: artist):
+  app/controllers/posts_controller.rb:50:in `post_params'
+  app/controllers/posts_controller.rb:14:in `create'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (145.4ms)
+
+
+Started GET "/posts/" for ::1 at 2015-07-28 23:50:30 -0400
+Processing by PostsController#index as HTML
+  Rendered posts/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-07-28 23:51:13 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tcoanvIzOIc6G29B9ocyg5S5hY9dMdPw9VQOSszNCjDefl/Wv+6gdH0HPQXC2h3ZSHdKR1OlMWduH0SD7XdNyQ==", "post"=>{"title"=>"first", "text"=>"blah"}, "commit"=>"Save Post"}
+PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "posts" does not exist
+LINE 5:                WHERE a.attrelid = '"posts"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"posts"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  app/controllers/posts_controller.rb:14:in `create'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-29 08:58:49 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (143.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-29 08:59:09 -0400
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.0ms)
+  [1m[36m (39.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20150729115503)
+  [1m[35m (0.9ms)[0m  BEGIN
+  [1m[36m (16.5ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "title" character varying, "text" character varying) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150729115503"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150729115859)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "title" character varying, "text" character varying, "post_id" integer) [0m
+  [1m[35m (1.3ms)[0m  CREATE  INDEX  "index_comments_on_post_id" ON "comments"  ("post_id")
+  [1m[36m (9.4ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150729115859"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.8ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/posts" for ::1 at 2015-07-29 09:02:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 269ms (Views: 252.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-29 09:12:21 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 29.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 09:12:22 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 09:12:22 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 09:12:22 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 09:12:22 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-29 09:12:22 -0400
+
+
+Started GET "/" for ::1 at 2015-07-29 09:12:34 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-29 09:13:04 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 58ms (Views: 47.7ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/posts" for ::1 at 2015-07-29 09:13:14 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QORThtx6m0itTT1dxc0PdE2LuRgjpR8s+rXHW2aBbhsrUBbOkacDu+pRbxnxkCAukUV20C0x/bth/o2SRzsp4g==", "post"=>{"title"=>"test1", "text"=>"test"}, "commit"=>"Save Post"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "posts" ("title", "text") VALUES ($1, $2) RETURNING "id"[0m  [["title", "test1"], ["text", "test"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts.1
+Completed 302 Found in 15ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/posts.1" for ::1 at 2015-07-29 09:13:14 -0400
+Processing by PostsController#index as 
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (25.8ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `name' for #<Post id: 1, title: "test1", text: "test">):
+    3: <ul>
+    4:   <% @posts.each do |post| %>
+    5:     <li>
+    6:       <%= link_to post.name, post %>
+    7:     </li>
+    8:   <% end %>
+    9: </ul>
+  app/views/posts/index.html.erb:6:in `block in _app_views_posts_index_html_erb__2719744832703150032_70275451474680'
+  app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb__2719744832703150032_70275451474680'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-29 09:14:43 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-29 09:14:49 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.8ms)
+
+ActionView::MissingTemplate (Missing template posts/show, application/show with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/adrianshepelavey/wdi/projects/scribble/scribble/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (55.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.6ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-29 09:14:49 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms)
+
+ActionView::MissingTemplate (Missing template posts/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/adrianshepelavey/wdi/projects/scribble/scribble/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (57.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-29 09:15:09 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-29 09:32:19 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-29 09:32:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+ActionView::MissingTemplate (Missing template posts/show, application/show with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/adrianshepelavey/wdi/projects/scribble/scribble/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.1ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (132.8ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-29 09:32:22 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+ActionView::MissingTemplate (Missing template posts/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/adrianshepelavey/wdi/projects/scribble/scribble/app/views"
+):
+  actionview (4.2.3) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.3) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.3) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.3) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.3) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.3) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.3) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.3) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.3) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.3) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.3) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.3) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:115:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:553:in `block (2 levels) in compile'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:503:in `call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:88:in `run_callbacks'
+  actionpack (4.2.3) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.3) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.3) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.3) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/adrianshepelavey/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (60.8ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adrianshepelavey/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (106.7ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-29 09:42:25 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 77ms (Views: 71.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-29 09:42:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-29 09:42:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-29 09:42:25 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-07-29 09:42:25 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-29 09:42:25 -0400
+
+
+Started GET "/posts/1/edit" for ::1 at 2015-07-29 09:42:28 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (2.9ms)
+  Rendered posts/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/posts/1" for ::1 at 2015-07-29 09:42:42 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ouUQzkFttq1yy0mfhh/2DG0rtOVPKWUJfcyLWlAgu4LJUVWGDLAuXjXXG9uyQtlWseV7LUG9h57mh8GTcZr8ew==", "post"=>{"title"=>"test1", "text"=>"test test"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "posts" SET "text" = $1 WHERE "posts"."id" = $2[0m  [["text", "test test"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts.1
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts.1" for ::1 at 2015-07-29 09:42:42 -0400
+Processing by PostsController#index as 
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-29 09:42:44 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-29 10:05:35 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (8.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 66ms (Views: 55.0ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-29 10:05:37 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-07-29 10:05:50 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/fzIfXsyA6un7wQPdGcCcEChrkWvNjsBpQnrrFfntC2WSI01Nu+bWODzVktAOi0qnG9hjaGi2ZY+QqFldl3z1A==", "post"=>{"title"=>"test2", "text"=>"blah blah blal"}, "commit"=>"Save Post"}
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (7.5ms)[0m  INSERT INTO "posts" ("title", "text") VALUES ($1, $2) RETURNING "id"  [["title", "test2"], ["text", "blah blah blal"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts.2
+Completed 302 Found in 14ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/posts.2" for ::1 at 2015-07-29 10:05:50 -0400
+Processing by PostsController#index as 
+  [1m[35mPost Load (1.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-29 10:05:54 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2015-07-29 10:06:04 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hvtl2BUxFf4r4yaeb0ioPIOxeJAno3xr0GOT6bcWNgDtTyCQWOyNDWz/dNpbFYdmX3+3WCk3nvxLKNkglqxx+Q==", "post"=>{"title"=>"test3", "text"=>"yak yak yak"}, "commit"=>"Save Post"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "text") VALUES ($1, $2) RETURNING "id"  [["title", "test3"], ["text", "yak yak yak"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts.3
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts.3" for ::1 at 2015-07-29 10:06:04 -0400
+Processing by PostsController#index as 
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.4ms)
