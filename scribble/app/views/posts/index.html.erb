@@ -1,17 +1,9 @@
-<h2>Posts</h2>
+<h2>Posts <%= link_to "(+)", new_post_path %></h2>
 
-<%= form_for :post, url: posts_path  do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
-
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.title, post %>
+    </li>
+  <% end %>
+</ul>
