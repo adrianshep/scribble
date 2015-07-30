@@ -5,11 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-require_relative './comment_data.rb'
-require_relative './post_data.rb'
+# require_relative './comment_data.rb'
+# require_relative './post_data.rb'
 
-Comment.destroy_all
-Post.destroy_all
+# Comment.destroy_all
+# Post.destroy_all
 
-comment_data = get_comment_data()
-post_data = get_post_data()
+# comment_data = get_comment_data()
+# post_data = get_post_data()
