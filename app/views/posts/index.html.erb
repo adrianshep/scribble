@@ -1,4 +1,4 @@
-<h2>Posts <a href="/posts/new">(+)</a></h2>
+<h2>Posts <a href="/posts/new">(new)</a></h2>
 <!-- <%= link_to "(new)", new_post_path %> -->
 <ul>
   <% @posts.each do |post| %>
@@ -6,7 +6,7 @@
       <a href="/posts/<%= post.id %>">
         <%= post.title %>
       </a>
-      <!-- <%= link_to post.title, post %> -->
+      <!-- <%#= link_to post.title, post %> -->
     </li>
   <% end %>
 </ul>
