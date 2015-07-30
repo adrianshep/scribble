@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
 
   root to: 'posts#index'
-
-  resources :posts
-  resources :comments
-
+  get '/comments', to: 'comments#index'
+  resources :posts do
+    resources :comments
+  end
+  get '/signin', to: 'users#signin_prompt'
+  post '/signin', to: 'users#signin'
+  get '/signout', to: 'users#signout'
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -59,4 +63,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end

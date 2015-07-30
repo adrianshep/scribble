@@ -1,10 +1,21 @@
 <%= form_for @post do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
 
-  <%= f.label :text %>
-  <%= f.text_field :text %>
+  <p>
+    <%= f.label :user %><br>
+    <%= f.text_field :user %>
+  </p>
 
-  <%= f.submit %>
-  
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
 <% end %>

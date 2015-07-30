@@ -2,7 +2,7 @@ class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|
       t.string :title
-      t.string :author
+      t.string :user
       t.string :text
       t.timestamps null: false
     end

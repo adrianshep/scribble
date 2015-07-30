@@ -1,0 +1,21 @@
+<h2>Edit Comment</h2>
+
+<form action="/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="comment[title]">Title:</label>
+  <input name="comment[title]" value="<%= @comment.title %>">
+
+  <label for="comment[text]">Comment:</label>
+  <input name="comment[text]" value="<%= @comment.text %>">
+
+  <label for="comment[post_id]">Post ID:</label>
+  <input name="comment[post_id]" value="<%= @comment.post_id %>">
+
+  <input type="submit" value="Create">
+</form>
+
+<form action="/comments/<%= @comment.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>
