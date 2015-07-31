@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
   # index
   def index
-    @comments = Comment.all
+    @post = Post.find(params[:post_id])
+    @comments = @post.comments.all
   end
 
   # new
@@ -24,6 +25,7 @@ class CommentsController < ApplicationController
 
   # edit
   def edit
+    @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
   end
 
@@ -32,7 +34,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @post = Post.find(params[:post_id])
     @comment.update(comment_params.merge(post: @post))
-    redirect_to post_comment_path(@comment.post, @comment)
+    redirect_to post_comments_path(@comment.post, @comment)
   end
 
   # destroy

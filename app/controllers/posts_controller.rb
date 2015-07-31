@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   # index
   def index
-    @posts = Post.all
+    @posts = Post.all.reverse
     # User.find(session[:user]["id"]).posts
   end
 

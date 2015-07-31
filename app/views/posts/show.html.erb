@@ -2,22 +2,12 @@
 
 <p><%= @post.text %></p>
 
-<h3>Comments <%= link_to "(+)", new_post_comment_path(@post) %></h3>
+<h3>Comments <%= link_to "(new)", new_post_comment_path(@post) %></h3>
 <ul>
   <% @post.comments.each do |comment| %>
     <li>
-      <%= link_to "#{comment.title}", post_comment_path(@post, comment) %>
+      <%= link_to "#{comment.title} #{comment.text}", post_comment_path(@post, comment) %>
     </li>
 
   <% end %>
 </ul>
-
-<!-- h2><%#= @post.title %> <%= link_to "(edit)", edit_post_path(@post) %></h2> -->
-
-<!-- <ul> -->
-  <!-- <% @post.comments.each do |post| %> -->
-    <!-- <li> -->
-      <!-- <%#= link_to "#{song.title} (#{song.album})", song %> -->
-    <!-- </li> -->
-  <!-- <% end %> -->
-<!-- </ul> -->
