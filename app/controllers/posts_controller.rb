@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
   # index
   def index
+    # @user = User.find(session[:user]["id"])
     @posts = Post.all.reverse
-    # User.find(session[:user]["id"]).posts
   end
 
   # new
@@ -13,7 +13,8 @@ class PostsController < ApplicationController
   # create
   def create
     @post = Post.create!(post_params)
-    # .merge({user_id: session[:user]["id"]}))
+    # @user = User.find(session[:user]["id"])
+    # @post = @user.posts.create!(post_params)
     redirect_to post_path(@post)
   end
 

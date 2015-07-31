@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   # index
   def index
     @post = Post.find(params[:post_id])
-    @comments = @post.comments.all
+    @comments = @post.comments.all.reverse
   end
 
   # new
@@ -21,6 +21,7 @@ class CommentsController < ApplicationController
   #show
   def show
     @comment = Comment.find(params[:id])
+    # redirect_to edit_post_comment_path
   end
 
   # edit

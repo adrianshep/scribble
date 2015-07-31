@@ -15,8 +15,8 @@ end
 
 
 
-# get '/signin', to: 'users#signin_prompt'
-# post '/signin', to: 'users#signin'
+# get '/', to: 'users#_prompt'
+# post '/', to: 'users#'
 # get '/signout', to: 'users#signout'
 
   # The priority is based upon order of creation: first created -> highest priority.
