@@ -1,12 +1,12 @@
 <h2><%= @comment.title %> <a href="/comments/<%= @comment.id %>/edit">(edit)</a></h2>
 <h3>In response to:</h3>
 <h3><%= @comment.post.title %></h3>
-
+<h4>Posted by: <%= @comment.post.username %></h4>
 <p>
 <%= @comment.post.text %>
 <p>
 
-<h3>Comment:</h3>
+<h4>Comment from: <%= @comment.username %></h4>
 <p>
 <%= @comment.text %>
 <p>
